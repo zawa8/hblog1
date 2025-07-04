@@ -15,15 +15,10 @@ export const metadata: Metadata = {
     description: blogConfig.description,
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
-}>) {
-    return (
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) { return (
         <html lang="en">
         <ProviderTheme>
-            <body className={`${hindienglosoftw8asc.className} antialiased relative min-h-screen font-mono flex flex-col justify-between`}>
+            <body className={`${hindienglosoftw8asc.className} antialiased relative min-h-screen flex flex-col justify-between`}>
             <div className={'flex-1'}>
                 <Header/>
                 <main className={'md:mb-12 mb-8 min-w-full prose md:prose-lg dark:prose-invert'}>
